@@ -3,7 +3,7 @@ import dbConnect from "../../../../dbConfig/dbConnect";
 import bcrypt from "bcryptjs";
 import { sendEmail } from "@/helpers/mailer";
 
-export default async function (req, res) {
+export default async function New(req, res) {
   try {
     dbConnect();
     const { username, password, email } = req.body;
