@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { toast, Toaster } from "react-hot-toast";
-const page = () => {
+const Signup = () => {
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -108,4 +108,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Signup;
