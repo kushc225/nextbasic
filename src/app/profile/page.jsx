@@ -20,9 +20,9 @@ const Profile = () => {
   }
   return (
     <>
-  <div className='absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2'>bsdk 
-  
-  <p>{user?.username || "loading"}</p>
+  <div className='absolute top-1/2 left-1/2 translate-x-1/2 translate-y-1/2'> 
+    <h1 className='text-blue-500 text-center'>Welcome the Website Mr.{user?.username || "loading"}</h1>
+
     <button className=' bg-blue-500 border-none rounded-xl px-4 py-2 mt-2 hover:border-2 hover:border-blue-500' onClick={hdl}>More ?</button>
   </div>
     </>
