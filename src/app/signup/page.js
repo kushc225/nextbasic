@@ -19,10 +19,9 @@ const Signup = () => {
       const data = await axios.post("/api/users/new", user);
       console.log(data.data);
       if (data.data.success) {
-        // toast.success(data.data.msg);
         toast.success("Please Verify your email!");
       } else {
-        setErr(data.data.msg);
+        toast.error(data.data.msg);
       }
     } catch (error) {
       toast.error(error.message);
